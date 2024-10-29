@@ -30,7 +30,7 @@ if (typeof TIMEZONE !== "string") {
 }
 
 const start = async (check: RegexpCheck | JsonCheck) => {
-  console.log("Running check");
+  console.log(`Running check for ${check.name}`);
   const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: false });
   try {
     const response = await fetch(check.url);
@@ -93,11 +93,11 @@ const start = async (check: RegexpCheck | JsonCheck) => {
     if (error instanceof Error) {
       bot.sendMessage(
         TELEGRAM_USER_ID,
-        `Automatic check failed. Error: "${error.message}".`
+        `Automatic for ${check.name}. Error: "${error.message}".`
       );
     }
   }
-  console.log("Check finished");
+  console.log(`Check for ${check.name} finished`);
 };
 
 const allGood = async () => {

@@ -1,16 +1,16 @@
-# local-regexp-notifier
+# local-notifier
 
-local-regexp-notifier is a simple library which can be hosted in docker to notify you via telegram when something appears/disappears from the page (local in your network or world wide web).
+local-notifier is a simple library which can be hosted in docker to notify you via telegram when something appears/disappears from the page (local in your network or world wide web).
 
 ## Installation
 
 1. Clone the repository
    ```bash
-   git clone git@github.com:armata007/local-regexp-notifier.git
+   git clone git@github.com:armata007/local-notifier.git
    ```
 1. cd into the repository
    ```bash
-   cd local-regexp-notifier
+   cd local-notifier
    ```
 1. Copy `.env.example` file to `.env`
    ```bash

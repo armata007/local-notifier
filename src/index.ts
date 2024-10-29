@@ -93,7 +93,7 @@ const start = async (check: RegexpCheck | JsonCheck) => {
     if (error instanceof Error) {
       bot.sendMessage(
         TELEGRAM_USER_ID,
-        `Automatic for ${check.name}. Error: "${error.message}".`
+        `Automatic check for ${check.name}. Error: "${error.message}".`
       );
     }
   }

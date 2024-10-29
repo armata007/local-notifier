@@ -1,6 +1,6 @@
 {
   "name": "local-notifier",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "index.mjs",
   "author": "Jarosław Salwa<armata007@gmail.com>",
   "license": "MIT",

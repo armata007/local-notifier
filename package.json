@@ -1,11 +1,11 @@
 {
   "name": "local-notifier",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.mjs",
   "author": "Jarosław Salwa<armata007@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "node-telegram-bot-api": "^0.66.0"
